@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
     display: flex;
+    background-color: #b2d8d8
 `;
 
 const Left = styled.div`
@@ -75,7 +76,11 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>AyuLannka</Logo>
+        <Logo>
+        <img src="images/new.png" style={{
+          width: '250px',
+        }} alt="logo" />
+        </Logo>
         <Desc>bla bla bla</Desc>
         <SocialContainer>
             <SocialIcon color="3B5999">
