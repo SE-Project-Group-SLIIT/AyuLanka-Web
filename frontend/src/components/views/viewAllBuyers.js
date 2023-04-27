@@ -96,15 +96,16 @@ export default function AllBuyers() {
                         <h2>List of Buyers</h2>
                     </div>
                     <table class="table" id="myTable" >
-                        <thead>
+                        <thead className='table-success'>
                             <tr>
-                                <th class="text">Buyer</th>
-                                <th class="text">Email</th>
-                                <th class="text">Mobile No.</th>
-                                <th class="text">Province</th>
-                                <th class="text">City</th>
-                                <th class="text">Area</th>
+                                <th class="text-center">Buyer</th>
+                                <th class="text-center">Email</th>
+                                <th class="text-center">Mobile No.</th>
+                                <th class="text-center">Province</th>
+                                <th class="text-center">City</th>
+                                <th class="text-center">Area</th>
                                 <th class="text-center">PostalCode</th>
+                                <th class="text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -112,7 +113,7 @@ export default function AllBuyers() {
                                 return (
                                     <tr>
                                         <td
-                                            class="text"
+                                            class="text-center"
                                             onClick={() => openModal(profile)}
                                             data-toggle="tooltip"
                                             data-placement="right"
@@ -121,13 +122,13 @@ export default function AllBuyers() {
                                         >
                                             {profile.BuyerName}
                                         </td>
-                                        <td class="text">{profile.Email}</td>
-                                        <td class="text">{profile.MobileNumber}</td>
-                                        <td class="text">{profile.Province}</td>
-                                        <td class="text-right">{profile.City}</td>
-                                        <td class="text-right">{profile.Area}</td>
-                                        <td class="text-right">{profile.PostalCode}</td>
-                                        <td class="text">
+                                        <td class="text-center">{profile.Email}</td>
+                                        <td class="text-center">{profile.MobileNumber}</td>
+                                        <td class="text-center">{profile.Province}</td>
+                                        <td class="text-center">{profile.City}</td>
+                                        <td class="text-center">{profile.Area}</td>
+                                        <td class="text-center">{profile.PostalCode}</td>
+                                        <td class="text-center">
                                             <div
                                                 class="btn-group"
                                                 role="group"
